@@ -1,0 +1,528 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  color: #333;
+  background-color: #fff;
+}
+
+.nav-bar {
+  background-color: #f4f2ff;
+  width: 100%;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+
+  .logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  .img {
+    background-color: #8e52ff;
+    border-radius: 10px;
+    width: 40px;
+    height: 40px;
+  }
+  ul {
+    list-style: none;
+
+    display: flex;
+    gap: 20px;
+    margin: 0;
+    padding: 0;
+  }
+
+  li.other a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+  }
+
+  li.other a:hover {
+    color: #8e52ff;
+    text-decoration: underline;
+  }
+}
+
+.one {
+  display: flex;
+  gap: 50px;
+  max-width: 1200px;
+  margin: 20px auto;
+  padding: 0 20px;
+}
+
+.one .img {
+  width: 40%;
+  max-height: 400px;
+  overflow: hidden;
+  border: 2px solid #ccc;
+  border-radius: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.one .img .off {
+  position: absolute;
+  top: 30px;
+  left: 30px;
+  background-color: #8e52ff;
+  color: white;
+  padding: 4px 7px;
+  z-index: 10;
+  border-radius: 15px;
+  font-size: 11px;
+}
+.one .img img {
+  border-radius: 15px;
+  width: 90%;
+  height: 90%;
+  object-fit: cover;
+}
+
+.one .content {
+  width: 55%;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.one .content .btns button {
+  background-color: #a785ff;
+  border: none;
+  padding: 5px 10px;
+  color: white;
+  border-radius: 15px;
+  margin-right: 10px;
+}
+
+.one .content h2 span {
+  color: #8e52ff;
+  font-weight: bold;
+}
+
+.one .content .price {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.one .content .price span {
+  background-color: #ffe0e0;
+  color: red;
+  font-size: 12px;
+  font-weight: bold;
+  border-radius: 15px;
+  padding: 4px;
+}
+.one .content .buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 20px;
+}
+.one .content .buttons button {
+  width: 100%;
+  height: 35px;
+  gap: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 5px 0px;
+  font-size: 16px;
+  border-radius: 15px;
+  cursor: pointer;
+}
+.one .content .buttons button:hover {
+  transform: scale(1.05);
+}
+.one .content .buttons .first img,
+.one .content .buttons .second img {
+  height: 20px;
+  width: auto;
+}
+.one .content .buttons .first {
+  background-color: #8e52ff;
+  color: white;
+  border: none;
+}
+.one .content .buttons .second {
+  background-color: white;
+  border: 1px solid gray;
+  color: black;
+}
+
+.two {
+  display: flex;
+  gap: 10px;
+  margin: 50px auto;
+  padding: 30px 30px;
+  background-color: #f4f2ff;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.two h2 span {
+  color: #8e52ff;
+}
+
+.two .content {
+  display: flex;
+  max-width: 80%;
+  height: 30%;
+  gap: 15px;
+  justify-content: center;
+  border-radius: 15px;
+  padding: 20px;
+}
+
+.two .content .cont {
+  width: 300px;
+  height: 400px;
+  position: relative;
+  overflow: hidden;
+  border-radius: 15px;
+  border: 1px solid gray;
+  padding: 10px;
+  background-color: white;
+}
+
+.two .content .rate {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  background-color: #fcc100;
+  color: #000;
+  padding: 2px 6px;
+  z-index: 10;
+  border-radius: 10px;
+  font-size: 14px;
+}
+
+.two .content .cont img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 20px;
+  transition: transform 0.3s ease;
+}
+.two .content .cont:hover img {
+  transform: scale(1.05);
+}
+
+.two .content .cont .group {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+}
+.two .content .cont .group button {
+  border: none;
+  background-color: #8e52ff;
+  color: white;
+  border-radius: 20px;
+  padding: 10px 20px;
+}
+
+.two .view {
+  border: none;
+  border: 2px solid #8e52ff;
+  color: #8e52ff;
+  border-radius: 15px;
+  padding: 10px;
+}
+
+.two .view:hover {
+  background-color: #8e52ff;
+  color: white;
+}
+
+.three {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin: 50px auto;
+  padding: 30px;
+  background-color: white;
+  align-items: center;
+}
+
+.three span {
+  color: #8e52ff;
+}
+
+.three h2 {
+  font-weight: bold;
+}
+
+.three p {
+  font-size: 14px;
+  color: #555;
+}
+
+.three .container {
+  display: flex;
+  gap: 20px;
+}
+
+.three .left {
+  max-width: 300px;
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  align-items: center;
+  border: 1px solid gray;
+  padding: 10px 20px;
+  border-radius: 15px;
+
+  position: sticky;
+  top: 20px;
+}
+
+.three .left .stars {
+  display: flex;
+  width: 110px;
+  height: 50px;
+  overflow: hidden;
+  padding: 10px;
+  background-color: white;
+}
+
+.three .left .stars img {
+  width: 15px;
+  height: 15px;
+  object-fit: cover;
+  margin-right: 2px;
+}
+
+.three .left .rate {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  width: 220px;
+}
+
+.three .left .rate .row {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 12px;
+}
+
+.three .left .rate .bar {
+  flex: 1;
+  height: 8px;
+  background-color: #eee;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.three .left .rate .fill {
+  height: 100%;
+  background-color: #fcc100;
+  border-radius: 5px;
+}
+
+.fill five {
+  width: 78%;
+}
+.fill four {
+  width: 20%;
+}
+.fill three {
+  width: 10%;
+}
+.fill two {
+  width: 10%;
+}
+.fill one {
+  width: 5%;
+}
+
+.three .left .footer {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.three .left .footer .first,
+.three .left .footer .second {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.three .right {
+  display: flex;
+  max-width: 70%;
+  height: 30%;
+  gap: 15px;
+  justify-content: center;
+  border-radius: 15px;
+  padding: 20px;
+  flex-direction: column;
+  align-items: center;
+}
+
+.three .right .part {
+  width: 700px;
+  height: 250px;
+  overflow: hidden;
+  border-radius: 15px;
+  border: 1px solid gray;
+  padding: 10px;
+  background-color: white;
+}
+
+.three .right .part .img img {
+  width: 40px;
+  height: 40px;
+  object-fit: cover;
+  border-radius: 100px;
+  border: 2px solid #8e52ff;
+}
+
+.three .right .part .uppur {
+  display: flex;
+  justify-content: space-between;
+}
+
+.three .right .part .uppur .cont {
+  display: flex;
+  gap: 20px;
+  padding: 10px;
+  justify-content: center;
+  align-items: center;
+}
+
+.three .right .part .uppur .data {
+  display: flex;
+  flex-direction: column;
+}
+
+.three .right .part .uppur .data .stars {
+  display: flex;
+  width: 110px;
+  height: 50px;
+  overflow: hidden;
+  padding: 10px;
+  background-color: white;
+}
+
+.three .right .part .uppur .data .stars img {
+  width: 15px;
+  height: 15px;
+  object-fit: cover;
+}
+
+.three .right .part .uppur .verified {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  align-items: end;
+}
+
+.three .right .part .uppur .verified span {
+  background-color: #eeebff;
+  color: #8e52ff;
+  border-radius: 15px;
+  padding: 5px 9px;
+  font-size: 11px;
+}
+
+.three .right .part .uppur .verified p {
+  font-size: 10px;
+}
+
+.three .right button {
+  background-color: #8e52ff;
+  color: white;
+  border-radius: 15px;
+  padding: 10px;
+  width: 170px;
+  border: none;
+}
+
+.three .right button:hover {
+  background-color: white;
+  color: #8e52ff;
+  border-radius: 15px;
+  border: 2px solid #8e52ff;
+}
+
+.four {
+  background-color: #0f1726;
+  width: 100%;
+  height: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  color: white;
+}
+
+.four .section-one {
+  width: 30%;
+}
+
+.four .section-one .logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.four .section-one .logo img {
+  background-color: #8e52ff;
+  border-radius: 10px;
+  width: 40px;
+  height: 40px;
+  padding: 5px;
+}
+
+.four .section-one p {
+  font-size: 15px;
+  padding-top: 10px;
+}
+
+.four .section-two {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+
+.four .section-two h3 {
+  padding-bottom: 20px;
+  font-weight: 25px;
+
+}
+
+.four .section-three h3 {
+  padding-bottom: 20px;
+  font-weight: 25px;
+
+}
+
+.four .section-four h3 {
+  padding-bottom: 20px;
+  font-weight: 25px;
+
+}
+
+.four ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin: 0;
+  padding: 0;
+  font-size: 14px;
+}
